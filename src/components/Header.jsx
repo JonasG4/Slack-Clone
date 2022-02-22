@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Avatar } from '@material-ui/core'
-import AccessTimeIcon from '@material-ui/icons/AccessTime';
-import { AccessTime, Search } from '@material-ui/icons'
+import { AccessTime, Search,HelpOutline } from '@material-ui/icons'
 function Header() {
     return (
         <HeaderContainer>
@@ -21,7 +20,7 @@ function Header() {
 
             {/* Right */}
             <HeaderRight>
-
+                <HelpOutline />
             </HeaderRight>
         </HeaderContainer>
     )
@@ -88,5 +87,11 @@ const HeaderSearch = styled.div`
 
 const HeaderRight = styled.div`
 display: flex;
+flex: 0.3;
+align-items: center;
 
+> .MuiSvgIcon-root{
+    margin-left: auto;
+    margin-right: 20px;
+}
 `
